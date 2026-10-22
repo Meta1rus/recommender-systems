@@ -1,5 +1,16 @@
 # Двухуровневая рекомендательная система фильмов на данных KION
 
+<!-- header -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Python%203.11-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.11">
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch">
+  <img src="https://img.shields.io/badge/CatBoost-FFCC00?style=flat-square" alt="CatBoost">
+  <img src="https://img.shields.io/badge/implicit-6B7280?style=flat-square" alt="implicit">
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter">
+</p>
+
+<p align="center"><img src="docs/figures/ndcg_test.png" alt="NDCG@10 на тесте" width="90%"></p>
+
 Кандидатов отбирают три модели: сегментная популярность, iALS и Mult-VAE. Затем CatBoostRanker ранжирует их по 34
 признакам, которые для каждого дня считаются только по прошлым данным. Рядом — четыре работы, которые к этому ведут:
 метрики, бейзлайны и EASE, матричные разложения, ALS и NCF.
